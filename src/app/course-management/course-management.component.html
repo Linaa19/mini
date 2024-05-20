@@ -1,0 +1,56 @@
+
+<div class="search-form-wrapper">
+  <form class="search-form" id="" action="">
+      <div class="input-group">
+          <input type="text" name="search"placeholder="Search..." style="width: 300px; height: 40px;">
+          <span class="input-group-addon" id="basic-addon2">
+              <i class="fa fa-search" aria-hidden="true"></i>
+          </span>
+          <span class="input-group-addon" id="basic-addon2">
+              <i class="fa fa-window-close" aria-hidden="true"></i>
+          </span>
+          <button type="submit" class="btn btn-primary" style="width: 80px; height: 40px;">Search</button>
+      </div>
+  </form>
+</div>
+
+<div class="course-management">
+    <h2>Create a New Course</h2>
+    <form (ngSubmit)="onSubmit()" #courseForm="ngForm">
+      <div>
+        <label for="title">Course Title:</label>
+        <input type="text" id="title" required [(ngModel)]="course.title" name="title" #title="ngModel">
+        <div *ngIf="title.invalid && title.touched" class="error">
+          Title is required
+        </div>
+      </div>
+  
+      <div>
+        <label for="description">Course Description:</label>
+        <textarea id="description" required [(ngModel)]="course.description" name="description" #description="ngModel"></textarea>
+        <div *ngIf="description.invalid && description.touched" class="error">
+          Description is required
+        </div>
+      </div>
+  
+      <div>
+        <label for="duration">Course Duration (hours):</label>
+        <input type="number" id="duration" required [(ngModel)]="course.duration" name="duration" #duration="ngModel">
+        <div *ngIf="duration.invalid && duration.touched" class="error">
+          Duration is required
+        </div>
+      </div>
+  
+      <button type="submit" [disabled]="courseForm.invalid">Create Course</button>
+    </form>
+  
+    <div *ngIf="courses.length > 0">
+      <h3>Existing Courses</h3>
+      <ul>
+        <li *ngFor="let course of courses">
+          <strong>{{ course.title }}</strong> - {{ course.description }} ({{ course.duration }} hours)
+        </li>
+      </ul>
+    </div>
+  </div>
+  

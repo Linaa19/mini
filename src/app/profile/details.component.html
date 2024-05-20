@@ -1,0 +1,22 @@
+<h1>My Profile</h1>
+<div class="profile-header">
+    <div class="profile-picture">
+        <img *ngIf="profileImage" [src]="profileImage" alt="Profile Picture" class="profile-img"  style="border-radius: 30%; width: 200px; height: 200px;"/>
+        <img *ngIf="!profileImage" src="../src/assets/avatar.jpg" alt="Default Profile Picture" class="profile-img"/>
+        <br>
+        <br>
+        <div class="button-container">
+            <button (click)="fileInput.click()">Upload Profile </button>
+            <button (click)="fileInput.click()">Edit Profile</button>
+        </div>
+        <input type="file" #fileInput (change)="onFileSelected($event)" style="display: none;" />
+        <button (click)="saveProfileImage()">Save</button>
+    </div>
+</div>
+<br>
+<p>
+    <strong>Name: </strong> {{account.title}} {{account.firstName}} {{account.lastName}}<br />
+    <strong>Email: </strong> {{account.email}}
+</p>
+
+<p><a routerLink="update">Update Profile</a></p>

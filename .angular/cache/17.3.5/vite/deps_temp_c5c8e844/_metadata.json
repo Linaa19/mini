@@ -1,0 +1,97 @@
+{
+  "hash": "bf1bc997",
+  "configHash": "227b8027",
+  "lockfileHash": "0db87935",
+  "browserHash": "d68f4f58",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "99c2edfc",
+      "needsInterop": false
+    },
+    "@angular/common/http": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
+      "file": "@angular_common_http.js",
+      "fileHash": "ee9b68af",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "8fc8643e",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "17dc864c",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "6da5a848",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "f4982d29",
+      "needsInterop": false
+    },
+    "@fullcalendar/core": {
+      "src": "../../../../../node_modules/@fullcalendar/core/index.js",
+      "file": "@fullcalendar_core.js",
+      "fileHash": "9ab2b6f5",
+      "needsInterop": false
+    },
+    "@fullcalendar/daygrid": {
+      "src": "../../../../../node_modules/@fullcalendar/daygrid/index.js",
+      "file": "@fullcalendar_daygrid.js",
+      "fileHash": "4049f9af",
+      "needsInterop": false
+    },
+    "rxjs": {
+      "src": "../../../../../node_modules/rxjs/_esm5/index.js",
+      "file": "rxjs.js",
+      "fileHash": "acab7c48",
+      "needsInterop": false
+    },
+    "rxjs/operators": {
+      "src": "../../../../../node_modules/rxjs/_esm5/operators/index.js",
+      "file": "rxjs_operators.js",
+      "fileHash": "619eaaa8",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-M2B67IR5": {
+      "file": "chunk-M2B67IR5.js"
+    },
+    "chunk-SROPOT4J": {
+      "file": "chunk-SROPOT4J.js"
+    },
+    "chunk-Z36ANMXA": {
+      "file": "chunk-Z36ANMXA.js"
+    },
+    "chunk-SRDK2NZD": {
+      "file": "chunk-SRDK2NZD.js"
+    },
+    "chunk-UMOB4LYC": {
+      "file": "chunk-UMOB4LYC.js"
+    },
+    "chunk-GK724PJ5": {
+      "file": "chunk-GK724PJ5.js"
+    },
+    "chunk-K5J6TFSH": {
+      "file": "chunk-K5J6TFSH.js"
+    },
+    "chunk-U55ZOQDG": {
+      "file": "chunk-U55ZOQDG.js"
+    },
+    "chunk-J4B6MK7R": {
+      "file": "chunk-J4B6MK7R.js"
+    }
+  }
+}
