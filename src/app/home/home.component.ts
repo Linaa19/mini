@@ -26,10 +26,6 @@ this.calendar = new Calendar(this.calendarEl.nativeElement, {
 plugins: [dayGridPlugin],
 initialView: 'dayGridMonth',
 events: [
-// Add your calendar events here (if needed)
-{ title: 'Event 1', start: '2024-05-10' },
-{ title: 'Jodel Birthday', start: '2024-06-19', end: '2024-06-19' },
-{ title: 'Intprog Final', start: '2024-05-21', end: '2024-05-21' }
 ]
 });
 this.calendar.render();
