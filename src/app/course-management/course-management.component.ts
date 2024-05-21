@@ -24,4 +24,11 @@ export class CourseManagementComponent {
     this.courses.push({ ...this.course });
     this.course = { title: '', description: '', duration: 0 };
   }
+
+  deleteCourse(course: Course): void {
+    const index = this.courses.indexOf(course);
+    if (index !== -1) {
+      this.courses.splice(index, 1);
+    }
+  }
 }
