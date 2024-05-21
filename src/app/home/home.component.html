@@ -1,28 +1,27 @@
 <div class="p-4">
-    <div class="container">
-      <h1>Hi {{account.firstName}}!</h1>
-      <p>Welcome to MINI LMS!!</p>
+  <div class="container">
+    <h1>Hi {{account.firstName}}!</h1>
+    <p>Welcome to MINI LMS!!</p>
+  </div>
+  
+  <div style="display: flex;">
+    <div style="flex-grow: 1;">
+      <app-course-management></app-course-management>
     </div>
-    
-    <div style="display: flex;">
-      <div style="flex-grow: 1;">
-        <app-course-management></app-course-management>
-      </div>
-      <div>
-        <!-- Calendar Section -->
-        <div class="calendar">
-          <h2>Calendar</h2>
-          <div class="row mt-14">
-            <!-- Calendar View -->
-            <div class="col-md-14 mb-14">
-              <input type="date" [(ngModel)]="eventDate" class="form-control mb-3" placeholder="YYYY-MM-DD">
-              <input type="text" [(ngModel)]="eventDescription" class="form-control mb-3" placeholder="Event Description">
-              <button (click)="addEvent()" class="btn btn-primary mb-3">Add Event</button>
-              <div #calendarEl></div>
-            </div>
+    <div>
+      <!-- Calendar Section -->
+      <div class="calendar">
+        <h2>Calendar</h2>
+        <div class="row mt-14">
+          <!-- Calendar View -->
+          <div class="col-md-14 mb-14">
+            <input type="date" [(ngModel)]="eventDate" class="form-control mb-3" placeholder="YYYY-MM-DD">
+            <input type="text" [(ngModel)]="eventDescription" class="form-control mb-3" placeholder="Event Description">
+            <button (click)="addEvent()" class="btn btn-primary mb-3">Add Event</button>
+            <div #calendarEl></div>
           </div>
         </div>
       </div>
     </div>
-    
+  </div>
   
