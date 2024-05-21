@@ -1,45 +1,50 @@
 <div class="p-4"></div>
-<style>
-  .search-form-wrapper {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 10vh; /* Centers vertically */
-  } 
-  </style>
-<div class="search-form-wrapper">
-  <form class="search-form" id="" action="">
-      <div class="input-group">
-          <input type="text" name="search"placeholder="Search..." style="width: 300px; height: 40px;">
-          <span class="input-group-addon" id="basic-addon2">
-              <i class="fa fa-search" aria-hidden="true"></i>
-          </span>
-          <span class="input-group-addon" id="basic-addon2">
-              <i class="fa fa-window-close" aria-hidden="true"></i>
-          </span>
-          <button type="submit" class="btn btn-primary" style="width: 80px; height: 40px;">Search</button>
-      </div>
-  </form>
-</div>
+  <style>
+    .search-form-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10vh; /* Centers vertically */
+    } 
+    </style>
+  <div class="search-form-wrapper">
+    <form class="search-form" id="" action="">
+        <div class="input-group">
+            <input type="text" name="search"placeholder="Search..." style="width: 300px; height: 40px;">
+            <span class="input-group-addon" id="basic-addon2">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </span>
+            <span class="input-group-addon" id="basic-addon2">
+                <i class="fa fa-window-close" aria-hidden="true"></i>
+            </span>
+            <button type="submit" class="btn btn-primary" style="width: 80px; height: 40px;">Search</button>
+        </div>
+    </form>
+  </div>
 
-<div class="p-4"></div>
-    <div style="display: flex;">
-      <div style="flex-grow: 1;">
-        <app-course-management></app-course-management>
-      </div>
-      <div>
-        <!-- Calendar Section -->
-        <div class="calendar">
-          <h2>Calendar</h2>
-          <div class="row mt-14">
-            <!-- Calendar View -->
-            <div class="col-md-14 mb-14">
-              <input type="date" [(ngModel)]="eventDate" class="form-control mb-3" placeholder="YYYY-MM-DD">
-              <input type="text" [(ngModel)]="eventDescription" class="form-control mb-3" placeholder="Event Description">
-              <button (click)="addEvent()" class="btn btn-primary mb-3">Add Event</button>
-              <div #calendarEl></div>
-            </div>
+  <div class="p-4"></div>
+  <div style="display: flex;">
+    <div style="flex-grow: 1;">
+      <app-course-management></app-course-management>
+      <!-- announcement  -->
+    <br>
+    <app-announcement-form></app-announcement-form>
+    <br>
+    <app-announcement-list></app-announcement-list>
+    </div>
+    <div>
+      <!-- Calendar Section -->
+      <div class="calendar">
+        <h2>Calendar</h2>
+        <div class="row mt-14">
+          <!-- Calendar View -->
+          <div class="col-md-14 mb-14">
+            <input type="date" [(ngModel)]="eventDate" class="form-control mb-3" placeholder="YYYY-MM-DD">
+            <input type="text" [(ngModel)]="eventDescription" class="form-control mb-3" placeholder="Event Description">
+            <button (click)="addEvent()" class="btn btn-primary mb-3">Add Event</button>
+            <div #calendarEl></div>
           </div>
         </div>
       </div>
     </div>
+</div>

@@ -14,6 +14,11 @@ import { AlertComponent } from './_components';
 import { HomeComponent } from './home';
 import { CourseManagementComponent } from './course-management/course-management.component';
 
+//ANNOUNCEMENT
+import { AnnouncementListComponent } from './announcement-list/announcement-list.component';
+import { AnnouncementFormComponent } from './announcement-form/announcement-form.component';
+import { AnnouncementService } from './_services/announcement.service';
+import { AuthService } from './_services/auth.service';
 
 @NgModule({
     imports: [
@@ -27,7 +32,9 @@ import { CourseManagementComponent } from './course-management/course-management
         AppComponent,
         CourseManagementComponent,
         AlertComponent,
-        HomeComponent
+        HomeComponent,
+        AnnouncementListComponent,
+        AnnouncementFormComponent
     ],
     providers: [
         { provide: APP_INITIALIZER, useFactory: appInitializer, multi: true, deps: [AccountService] },
@@ -35,7 +42,10 @@ import { CourseManagementComponent } from './course-management/course-management
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
         // provider used to create fake backend
-        //fakeBackendProvider
+        fakeBackendProvider,
+        AnnouncementService, 
+        AuthService,
+        AppComponent
     ],
     bootstrap: [AppComponent]
 })
