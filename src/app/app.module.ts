@@ -43,9 +43,7 @@ import { AuthService } from './_services/auth.service';
 
         // provider used to create fake backend
         fakeBackendProvider,
-        AnnouncementService, 
-        AuthService,
-        AppComponent
+
     ],
     bootstrap: [AppComponent]
 })
